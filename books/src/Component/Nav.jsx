@@ -8,7 +8,7 @@ function Nav() {
   const [input, setInput] = useState("");
   const [dataFiltered, setDataFiltered] = useState([]);
 
-  // fetching data from api 
+  // fetching data from api
   useEffect(() => {
     axios
       .get("https://reactnd-books-api.udacity.com/books", {
@@ -16,6 +16,7 @@ function Nav() {
       })
       .then((response) => {
         const Book = response.data.books;
+        console.log(Book);
         setBooks(Book);
         setDataFiltered(Book);
       })
@@ -34,7 +35,7 @@ function Nav() {
   };
 
   const generateRandomPrice = () => {
-    return (Math.floor(Math.random() * 100 + 1)).toFixed(2);
+    return Math.floor(Math.random() * 100 + 1).toFixed(2);
   };
 
   //filtering the data if the input value includes the values of the title
@@ -76,7 +77,11 @@ function Nav() {
                 alt={element.title}
               />
               <p>{element.title}</p>
-              <p>{element.averageRating ? element.averageRating : "⭐"}</p>
+              <p>
+                {element.averageRating
+                  ? element.averageRating + "⭐"
+                  : `${(Math.floor(Math.random() * 5 + 1).toFixed(1))}⭐`}
+              </p>
               <div>
                 <div>
                   <p className="price">{randomPrice}</p>
