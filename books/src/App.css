@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.inputbox {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 30px 40px 20px 20px;
+  box-shadow: 10px 10px 5px lightblue, 0px 3px 8px rgb(100,100,100);
+  width: 35%;
+}
+
+.message {
+  margin-bottom: 20px;
+  color: green;
+}
+
+.input-field {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.input-field input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 65%;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+input:hover{
+background-color: pink;
+}
+
+.error-message {
+  color: red;
+  font-size: 1rem;
+  margin-top: 5px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.submit-button:hover {
+  background-color: #aeeb3d;
+}
+
+.success{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.form{
+  text-align: center;
+  color:red;
+}
+
+/* Mobile responsive */
+@media (min-width:320px) and (max-width:600px){
+  .inputbox{
+    width: 70%;
+  }
+
+  .input-field input {
+    width: 100%;
+  }
+
+}
+
+/* Tab responsive */
+@media (min-width:768px) and (max-width:769px){
+  .inputbox{
+    width: 60%;
+  }
+  
+  .input-field input {
+    width: 60%;
+  }
+
+}

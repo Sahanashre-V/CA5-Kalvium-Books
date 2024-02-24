@@ -1,0 +1,116 @@
+
+.booklists{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+text-align: center;
+align-items: center;
+row-gap: 8%;
+}
+
+.bookimg{
+  height: 250px;
+  width: 200px;
+}
+
+p{
+  font-family: cursive;
+  font-size: 1.rem;
+}
+
+#inputbox{
+  width:30%;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kalviumbook{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register{
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: salmon;
+}
+
+.price {
+  text-decoration: line-through;
+  display: inline;
+}
+
+.free {
+  display: inline;
+}
+
+.books{
+  color:#ed3b37
+}
+
+/* Mobile responsive */
+
+@media (min-width:320px) and (max-width:600px) {
+  
+.booklists{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 10%;
+  text-align: center;
+}
+
+p{
+  font-size: 1rem;
+}
+
+.register{
+  font-size: 0.9rem;
+}
+
+.bookimg{
+  height: 100px;
+  width: 80px;
+}
+
+.kalimg{
+  height: 70px;
+}
+
+.books{
+  font-size: 0.9rem;
+}
+
+.register{
+  padding: 8px;
+  font-size: 0.8rem;
+}
+
+#inputbox{
+  width: 32%;
+  padding: 8px;
+  font-size: 0.8rem;
+}
+
+}
+
+/* Tab responsive */
+@media (min-width:768px) and (max-width:769px){
+  .booklists{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 10%;
+    text-align: center;
+  }
+  
+}
+
