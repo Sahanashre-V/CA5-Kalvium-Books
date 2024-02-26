@@ -9,6 +9,7 @@ function Register() {
 
     const FormSubmit = (data) => {
         setState(true);
+        console.log(data)
     };
 
     // pop up for registration successful
