@@ -1,3 +1,5 @@
+/* styling for components  */
+
 .container {
   display: flex;
   justify-content: center;
@@ -57,6 +59,7 @@ background-color: pink;
   font-size: 1rem;
 }
 
+/* hover  */
 .submit-button:hover {
   background-color: #aeeb3d;
 }

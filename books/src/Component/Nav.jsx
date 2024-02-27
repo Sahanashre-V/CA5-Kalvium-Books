@@ -14,12 +14,15 @@ function Nav() {
       .get("https://reactnd-books-api.udacity.com/books", {
         headers: { Authorization: "whatever-you-want" },
       })
+      //catching response
       .then((response) => {
         const Book = response.data.books;
         console.log(Book);
         setBooks(Book);
         setDataFiltered(Book);
       })
+
+      //catching error
       .catch((error) => {
         console.log("Error", error);
         if (error.response.status === 404) {

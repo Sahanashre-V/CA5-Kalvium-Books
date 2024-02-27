@@ -10,6 +10,10 @@ function Register() {
     const FormSubmit = (data) => {
         setState(true);
         console.log(data)
+        for(let s in data){
+            localStorage.setItem(s,data[s])
+        }
+   
     };
 
     // pop up for registration successful
